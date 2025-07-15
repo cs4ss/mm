@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - MoodMate</title>
+    <!-- Link to external CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <h1>Mood<span>Mate</span></h1>
+        </div>
+    </header>
+
+    <!-- Main -->
+    <main class="form-container">
+        <h2>Log In to Your Account</h2>
+
+        <!-- Login Form -->
+        <form action="login_process.php" method="POST">
+            <!-- Username -->
+            <label for="username">Username or Email:</label>
+            <input type="text" id="username" name="username" required>
+
+            <!-- Password -->
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <!-- Submit Button -->
+            <button type="submit" class="btn">Log In</button>
+        </form>
+
+        <p>Don't have an account? <a href="signup.html">Sign up here</a>.</p>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 MoodMate. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript validation -->
+    <script src="login_validation.js"></script>
+</body>
+</html>
