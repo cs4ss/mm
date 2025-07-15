@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Journal Entry - MoodMate</title>
+    <!-- Link to external CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <h1>Mood<span>Mate</span></h1>
+        </div>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav class="dashboard-nav">
+        <ul>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="log_mood.html">Log Mood</a></li>
+            <li><a href="view_entries.html">View Entries</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="logout.php">Logout</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="form-container">
+        <h2>Write Your Journal</h2>
+
+        <!-- Journal Form -->
+        <form action="journal_entry_process.php" method="POST">
+            <!-- Title -->
+            <label for="title">Title (optional):</label>
+            <input type="text" id="title" name="title" placeholder="Entry Title">
+
+            <!-- Journal Body -->
+            <label for="entry">Your Entry:</label>
+            <textarea id="entry" name="entry" rows="8" placeholder="Write your thoughts here..." required></textarea>
+
+            <!-- Submit Button -->
+            <button type="submit" class="btn">Save Entry</button>
+        </form>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 MoodMate. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

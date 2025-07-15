@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Entries - MoodMate</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <h1>Mood<span>Mate</span></h1>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="dashboard-nav">
+        <ul>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="log_mood.html">Log Mood</a></li>
+            <li><a href="journal_entry.html">Journal Entry</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="logout.php">Logout</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="entries-container">
+        <h2>Your Past Entries</h2>
+
+        <div class="calendar">
+            <div class="calendar-header">
+                <button>&lt;</button>
+                <h3>June 2025</h3>
+                <button>&gt;</button>
+            </div>
+
+            <div class="calendar-grid">
+                <div class="day-name">Sun</div>
+                <div class="day-name">Mon</div>
+                <div class="day-name">Tue</div>
+                <div class="day-name">Wed</div>
+                <div class="day-name">Thu</div>
+                <div class="day-name">Fri</div>
+                <div class="day-name">Sat</div>
+             
+                <div class="day"></div>
+                <div class="day">1</div>
+                <div class="day">2</div>
+                <div class="day">3</div>
+                <div class="day">4</div>
+                <div class="day mood-entry" title="😊 Good">5</div>
+                <div class="day">6</div>
+                <div class="day">7</div>
+                <div class="day mood-entry" title="😢 Sad">15</div>
+                <div class="day mood-entry" title="😄 Happy">21</div>
+                <div class="day">30</div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 MoodMate. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

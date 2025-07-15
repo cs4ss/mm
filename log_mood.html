@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log Your Mood - MoodMate</title>
+    <!-- Link to external CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <h1>Mood<span>Mate</span></h1>
+        </div>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav class="dashboard-nav">
+        <ul>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="journal_entry.html">Journal Entry</a></li>
+            <li><a href="view_entries.html">View Entries</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="logout.php">Logout</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="form-container">
+        <h2>How Are You Feeling Today?</h2>
+
+        <!-- Mood Logging Form -->
+        <form action="log_mood_process.php" method="POST">
+            <!-- Mood Selection (emoji scale) -->
+            <label for="mood">Select Your Mood:</label>
+            <select id="mood" name="mood" required>
+                <option value="">-- Choose a Mood --</option>
+                <option value="😄 Happy">😄 Happy</option>
+                <option value="😊 Good">😊 Good</option>
+                <option value="😐 Okay">😐 Okay</option>
+                <option value="😟 Stressed">😟 Stressed</option>
+                <option value="😢 Sad">😢 Sad</option>
+                <option value="😠 Angry">😠 Angry</option>
+                <option value="😴 Tired">😴 Tired</option>
+                <option value="🤷 Idk">🤷 Idk</option>
+            </select>
+
+            <!-- Optional note -->
+            <label for="note">Add a short note (optional):</label>
+            <textarea id="note" name="note" rows="4" placeholder="What's on your mind?"></textarea>
+
+            <!-- Submit Button -->
+            <button type="submit" class="btn">Submit Mood</button>
+        </form>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 MoodMate. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

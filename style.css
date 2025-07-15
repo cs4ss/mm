@@ -1,0 +1,513 @@
+/* ---------------- Landing Page ---------------- */
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body background and font settings */
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #d8b4fe, #f0abfc);
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Header/logo styles */
+header {
+  background-color: #ffffffaa;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.logo h1 {
+  font-size: 2rem;
+  color: #7c3aed; /* purple */
+}
+
+.logo span {
+  color: #d946ef; /* pink */
+}
+
+/* Main landing section */
+.landing-container {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.landing-container h2 {
+  font-size: 2.5rem;
+  color: #4c1d95;
+  margin-bottom: 10px;
+}
+
+.landing-container p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+/* Button styles */
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.btn {
+  text-decoration: none;
+  background-color: #8b5cf6;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 30px;
+  transition: background-color 0.3s;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background-color: #6d28d9;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #ffffffaa;
+  font-size: 0.9rem;
+  color: #555;
+  box-shadow: 0 -2px 4px rgba(0,0,0,0.1);
+}
+
+
+/* ---------------- Sign-Up Page ---------------- */
+
+.form-container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+.form-container h2 {
+  margin-bottom: 20px;
+  color: #6b21a8;
+}
+
+/* Label styles */
+form label {
+  display: block;
+  text-align: left;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #444;
+}
+
+/* Input styles */
+form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+form input:focus {
+  border-color: #8b5cf6;
+  outline: none;
+}
+
+/* Submit button (reuse .btn class) */
+form .btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #8b5cf6;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+form .btn:hover {
+  background-color: #6d28d9;
+}
+
+/* Link under form */
+.form-container p {
+  margin-top: 15px;
+  font-size: 0.9rem;
+}
+
+.form-container a {
+  color: #6b21a8;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.form-container a:hover {
+  text-decoration: underline;
+}
+
+
+
+/* ---------------- Dashboard Page ---------------- */
+
+/* Navigation bar styles */
+.dashboard-nav {
+  background-color: #7c3aed;
+  padding: 15px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.dashboard-nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 6px;
+  transition: background-color 0.3s;
+}
+
+.dashboard-nav a:hover {
+  background-color: #6d28d9;
+}
+
+/* Main dashboard content */
+.dashboard-main {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.dashboard-main h2 {
+  font-size: 2.2rem;
+  color: #4c1d95;
+  margin-bottom: 15px;
+}
+
+.dashboard-main p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+}
+
+/* Dashboard buttons */
+.dashboard-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.dashboard-buttons .btn {
+  padding: 14px 30px;
+  font-size: 1rem;
+}
+
+
+/* ---------------- Log Mood Page ---------------- */
+
+form select,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    transition: border-color 0.3s;
+}
+
+/* Highlight focus */
+form select:focus,
+form textarea:focus {
+    border-color: #8b5cf6;
+    outline: none;
+}
+
+/* Mood select dropdown */
+form select {
+    background-color: #fff;
+    cursor: pointer;
+}
+
+/* Textarea for note */
+form textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* Submit button (reuses .btn) */
+form .btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #8b5cf6;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form .btn:hover {
+    background-color: #6d28d9;
+}
+
+
+/* ---------------- Journal Entry Page ---------------- */
+
+
+form input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 1rem;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  transition: border-color 0.3s;
+}
+
+form input[type="text"]:focus {
+  border-color: #8b5cf6;
+  outline: none;
+}
+
+/* Journal textarea */
+form textarea {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  resize: vertical;
+  min-height: 200px;
+  margin-bottom: 20px;
+  transition: border-color 0.3s;
+}
+
+form textarea:focus {
+  border-color: #8b5cf6;
+  outline: none;
+}
+
+
+
+/* ---------------- Calendar Styles ---------------- */
+
+.calendar {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.calendar-header h3 {
+  font-size: 1.5rem;
+  color: #6b21a8;
+}
+
+.calendar-header button {
+  padding: 6px 10px;
+  font-size: 1rem;
+  background-color: #8b5cf6;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 8px;
+  text-align: center;
+}
+
+.day-name {
+  font-weight: bold;
+  color: #6b7280;
+  margin-bottom: 5px;
+}
+
+.day {
+  padding: 15px 0;
+  background-color: #f3e8ff;
+  border-radius: 6px;
+  color: #333;
+  font-weight: bold;
+}
+
+.mood-entry {
+  background-color: #d8b4fe;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.mood-entry:hover {
+  background-color: #c084fc;
+}
+
+
+/* ---------------- Resources Page ---------------- */
+
+.resources-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.resources-container h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #6b21a8;
+}
+
+.resource-section {
+    margin-bottom: 30px;
+}
+
+.resource-section h3 {
+    color: #4c1d95;
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+}
+
+/* Motivation Quote */
+blockquote {
+    font-style: italic;
+    background-color: #f3e8ff;
+    border-left: 5px solid #c084fc;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 6px;
+    color: #333;
+}
+
+/* Tips list */
+.resource-section ul {
+    padding-left: 20px;
+    list-style-type: disc;
+    color: #444;
+    line-height: 1.7;
+}
+
+/* Links */
+.resource-section a {
+    color: #8b5cf6;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.resource-section a:hover {
+    text-decoration: underline;
+}
+
+/* ---------------- Journal Entry Page ---------------- */
+.entry-title {
+    display: block;
+    font-size: 1.1rem;
+    color: #4c1d95;
+    margin-bottom: 5px;
+}
+
+/* ---------------- Calendar View ---------------- */
+.calendar-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* ---------------- Modal Styles ---------------- */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 30px;
+    border-radius: 12px;
+    width: 80%;
+    max-width: 400px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+    position: relative;
+}
+
+.modal-content h3 {
+    color: #6b21a8;
+    margin-bottom: 10px;
+}
+
+.close-button {
+    color: #aaa;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-button:hover {
+    color: #333;
+}
+
+
+.error-box {
+  background-color: #ffe0e0;
+  color: #b30000;
+  padding: 10px;
+  border: 1px solid #ffb3b3;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  font-size: 0.9em;
+}
+
+.error-msg {
+  color: red;
+  font-size: 0.85em;
+  margin-top: 4px;
+}
